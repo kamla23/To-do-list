@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-image: url('https://static.vecteezy.com/system/resources/thumbnails/039/210/148/small/ai-generated-beautiful-nature-mountain-scenery-professionalgraphy-photo.jpg');
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+}
+
+.bg-container {
+    max-width: 400px;
+    width: 100%;
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 80%;
+    overflow: hidden;
+}
+
+.bg-container h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+    letter-spacing: 1.2px;
+}
+
+.form-container {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.input {
+    flex: 1;
+    height: 45px;
+    outline: none;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 17px;
+    padding-left: 15px;
+    transition: border-color 0.3s;
+}
+
+.input:focus {
+    border-color: #777;
+}
+
+.button {
+    width: 60px;
+    height: 45px;
+    border: none;
+    outline: none;
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    color: white;
+    font-size: 17px;
+    cursor: pointer;
+    border-radius: 8px;
+    margin-left: 10px;
+    transition: background 0.3s;
+}
+
+.button:hover {
+    background: linear-gradient(135deg, #6e8efb, #a777e3, #63a4ff);
+}
+
+.todolist {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+    flex: 1;
+    overflow-y: auto;
+}
+
+.todolist li {
+    height: 45px;
+    line-height: 45px;
+    background: #f9f9f9;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background 0.3s;
+}
+todolist li:hover {
+    background: #f1f1f1;
+}
+
+.todolist li span {
+    color: #333;
+    font-size: 16px;
+}
+
+.delete-button {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    padding: 5px 10px;
+    transition: background-color 0.3s;
+}
+
+.delete-button:hover {
+    background-color: #ff1a1a;
+}
+
+.footer {
+    text-align: right;
+    margin-top: 20px;
+}
+
+.clear-button {
+    background-color: #ff4d4d;
+    color: white;
+    height: 35px;
+    width: 100px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.clear-button:hover {
+    background-color: #ff1a1a;
+}
+
+@media (max-width: 600px) {
+    .bg-container {
+        max-width: 90%;
+    }
+
+    .button {
+        width: 50px;
+    }
+
+    .clear-button {
+        width: 80px;
+    }
+}
